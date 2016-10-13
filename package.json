@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/cabloo/scp-ng-util#readme",
   "dependencies": {
-    "lodash": "^4.15.0"
+    "glob": "^7.0.6",
+    "lodash": "^4.15.0",
+    "q": "^1.4.1",
+    "resolve": "^1.1.7"
   },
   "devDependencies": {}
 }
