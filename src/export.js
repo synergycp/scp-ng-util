@@ -13,6 +13,7 @@ function Exporter(name, dirname) {
   var Export = this;
   var promises = [];
 
+  Export.isScpExporter = true;
   Export.node = node;
   Export.static = doStatic;
   Export.include = include;
@@ -43,7 +44,7 @@ function Exporter(name, dirname) {
         );
       }
 
-      if (result instanceof Exporter) {
+      if (result.isScpExporter) {
         return result
           .all()
           .then(promiseToAddFlattened)
@@ -84,6 +85,10 @@ function Exporter(name, dirname) {
     return Export.add(
       getFiles()
         .then(function (files) {
+          if (!files || !files.length) {
+            console.error('No files resolved for ' + relFiles);
+          }
+
           return {
             name: name,
             dirname: getNodeDir(files),
