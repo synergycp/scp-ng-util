@@ -1,6 +1,6 @@
 var _ = require('lodash');
 var Q = require('q');
-var glob = require('glob');
+var glob = require('glob/glob');
 var resolve = require('resolve');
 
 module.exports = makeExport;
