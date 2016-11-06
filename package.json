@@ -1,7 +1,7 @@
 {
   "name": "scp-ng-util",
   "version": "0.0.3",
-  "description": "Synergy Control Panel Angular build util files",
+  "description": "Synergy Control Panel Angular Utility files",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+ssh://github.com/cabloo/scp-ng-util.git"
   },
-  "author": "Synergy Control Panel",
+  "author": "synergycontrolpanel",
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/cabloo/scp-ng-util/issues"
