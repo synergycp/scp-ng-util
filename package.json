@@ -1,6 +1,6 @@
 {
   "name": "scp-ng-util",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Synergy Control Panel Angular Utility files",
   "main": "src/index.js",
   "scripts": {
