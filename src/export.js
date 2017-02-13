@@ -116,6 +116,10 @@ function Exporter(name, dirname) {
       .then(require.bind(require))
       .then(function (exported) {
         return exported;
+      })
+      .catch(function (err) {
+        throw new Error('Failed to load '+ mod + ': ' + err);
+        console.error(err);
       });
   }
 
